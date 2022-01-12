@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<section class="nature active">
+<header>  
+<h2 class="abc">NATURE</h2>
+<div class="toggle active"></div>
+</header>
+<video src="Clouds.mp4" muted loop autoplay></video>
+<div class="overlay"></div>
+<div class="text">
+    <h1>Nature is not a place to visit. ...</h1>
+    <p>It provides us the air to breathe, the water to drink, the soil to make a home, and the land to stay.<br></br>Nature is a precious and notable gift given to us by god.
+    </p>
+</div>
+<ul class="media">
+    <li><a href="https://www.facebook.com/"><img src="fb.png"></a></li>
+    <li><a href="https://www.instagram.com/"><img src="insta.jfif"></a></li>
+</ul>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href ="#">Quotes</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.nature');
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+</script>
+
+</body>
+</html>
